@@ -4,7 +4,7 @@
 // 
 jQuery.uaMatch = function( ua ) {
     ua = ua.toLowerCase();
-    var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
+    let match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
         /(webkit)[ \/]([\w.]+)/.exec( ua ) ||
         /(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
         /(msie) ([\w.]+)/.exec( ua ) ||

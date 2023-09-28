@@ -1,5 +1,5 @@
 // declare the namespace for this example
-var example = {};
+let example = {};
 
 /**
  * 

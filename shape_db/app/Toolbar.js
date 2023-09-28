@@ -50,7 +50,7 @@ example.Toolbar = Class.extend({
         this.disableButton(this.redoButton, true);
         this.disableButton(this.deleteButton, true);
 
-        this.html.append($("<div id='toolbar_hint'>Use the contextmenu on table entities for extended features..</div>"));
+        this.html.append($("<div id='toolbar_hint'>右クリックでラベルが追加される</div>"));
     },
 
 	/**

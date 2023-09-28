@@ -33,7 +33,7 @@ TableShape = draw2d.shape.layout.VerticalLayout.extend({
      */
     addEntity: function(txt, optionalIndex)
     {
-	   	 var label =new draw2d.shape.basic.Label({
+	   	 let label =new draw2d.shape.basic.Label({
 	   	     text:txt,
 	   	     stroke:0,
 	   	     radius:0,
@@ -45,13 +45,13 @@ TableShape = draw2d.shape.layout.VerticalLayout.extend({
 	   	 });
 
 //        label.installEditor(new draw2d.ui.LabelEditor());
-	     var input = label.createPort("input");
-	     var output= label.createPort("output");
+	     let input = label.createPort("input");
+	     let output= label.createPort("output");
 	     
          input.setName("input_"+label.id);
          output.setName("output_"+label.id);
          
-         var _table=this;
+         let _table=this;
          label.on("contextmenu", function(emitter, event){
              $.contextMenu({
                  selector: 'body', 
@@ -150,7 +150,7 @@ TableShape = draw2d.shape.layout.VerticalLayout.extend({
       */
      getPersistentAttributes : function()
      {
-         var memento= this._super();
+         let memento= this._super();
 
         memento.name = this.classLabel.getText();
         memento.entities   = [];
